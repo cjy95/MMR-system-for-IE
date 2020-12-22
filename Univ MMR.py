@@ -5,7 +5,7 @@ import math
   
 # Function to calculate the Probability 
 def Probability(rating1, rating2): 
-  
+    ## 400 is universal number for elo rating system.
     return 1.0 * 1.0 / (1 + 1.0 * math.pow(10, 1.0 * (rating1 - rating2) / 400)) 
   
   
@@ -38,8 +38,9 @@ def EloRating(Ra, Rb, K, d):
         Rb = Rb + K * (1 - Pb) 
       
   
-    print("Updated Ratings:-") 
-    print("Ra =", round(Ra, 6)," Rb =", round(Rb, 6)) 
+    print("Updated Ratings:-")
+    #round the answer to 0. 
+    print("Ra =", round(Ra, 0)," Rb =", round(Rb, 0)) 
   
 # Driver code 
   
@@ -49,6 +50,8 @@ Ra=int(Ra)
 Rb = input("Enter MMR for Player A: ")
 Rb=int(Rb)
 ##if K gets bigger, it will make effect on MMR bigger.
+#K is developers rating, if the player played more than hundreds of game than the k will be close to 20
+# if player played less than 100s and have winning streak, k will be 40-50
 K = input("this number will be developer's number where you can control between 20-50: ")
 K = int(K)
 d = input("if win = 1, else = other number: ")

@@ -19,6 +19,16 @@ from 1000, we could make system like
 2300-2400 Gold 2
 2400-2500 Gold 1
 2500-2600 platinum 5
-2600-2700 
-2700-2800
-2800-29
+2600-2700 platinum 4
+2700-2800 platinum 3
+2800-2900 platinum 2
+2900-3000 platinum 1
+3000-3100 Diamond 5
+3100-3200 Diamond 4
+3200-3300 Diamond 3
+3300-3400 Diamond 2
+3400-3500 Diamond 1
+3500-     Challenger
+
+After 3500, challenger will be challenger but it will have point system keep going up only.
+Users will only see last two digit of the MMR (ex. 1345 === bronze 2 45p)
