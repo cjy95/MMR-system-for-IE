@@ -1,6 +1,9 @@
+# Project Name
 # MMR-system-for-IE
 This MMR system is made for Isekai Eternal.
-
+# <a name="team-members"></a>Team Members
+* "Joon Young Chang" <joonyoung@andrews.edu>
+# detail description
 According to this system, we could put base MMR as 1000.
 from 1000, we could make system like
 1000-1100 bronze 5
