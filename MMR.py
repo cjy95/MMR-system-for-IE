@@ -14,7 +14,7 @@ wpA = input("win ratio of A: ")
 wpB = input("win ratio of B: ")
 wpA = int(wpA)
 wpB = int(wpB)
-wp = (.5+wpA-wpB)*10
+wp = (1+wpA-wpB)*10
 rat =  (100+ ratA - ratB)/ wp
 ## this will generate the number ratio for mmr
 expected = 1 /(10**rat)
