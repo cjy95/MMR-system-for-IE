@@ -35,3 +35,39 @@ from 1000, we could make system like
 
 After 3500, challenger will be challenger but it will have point system keep going up only.
 Users will only see last two digit of the MMR (ex. 1345 === bronze 2 45p)
+
+
+Take a close look on developer's number K
+This number specifically controls number of the points that the player will get.
+# As you take a close look, you will realize that when they clear out the losing streak, they will have equal chance with others.
+# This system will make sure as long as they try, they will get to as much tier as they want.
+# Instead of "Cushion", losers will lose less points as they kept on losing, winners will take normal points.
+if K in range (-100,-20):
+    K = 10
+elif K in range (-20,-10):
+    K = 15
+elif K in range (-10,-5):
+    K = 20
+elif K in range (-5,-3):
+    K = 25
+elif K in range (-5,0):
+    K = 30
+elif K in range (0,2):
+    K = 35
+elif K in range (2,4):
+    K = 40
+elif K in range (4,6):
+    K = 45
+    print("111111111111111111111111")
+elif K in range (6,10):
+    K = 50
+else: 
+    K = 60
+
+
+
+    In case of JunHyeong's play,
+    he lost first game so from 1000, he lost 15 points.
+    then he won a game, he gained 18 points
+    then he won again, he gained 15 points
+    so he has 1018 MMR currently.

@@ -47,13 +47,35 @@ def EloRating(Ra, Rb, K, d):
 # Ra and Rb are current ELO ratings 
 Ra = input("Enter MMR for Player A: ")
 Ra=int(Ra)
-Rb = input("Enter MMR for Player A: ")
+Rb = input("Enter MMR for Player B: ")
 Rb=int(Rb)
 ##if K gets bigger, it will make effect on MMR bigger.
 #K is developers rating, if the player played more than hundreds of game than the k will be close to 20
 # if player played less than 100s and have winning streak, k will be 40-50
-K = input("this number will be developer's number where you can control between 20-50: ")
+#K = input("this number will be developer's number where you can control between 20-50: ")
+K = input("Consecutive wins from this player? if it is winning streak, type number, if losing streak, type -number: " )
 K = int(K)
+## please look over readme for more explanation.
+if K in range (-100,-20):
+    K = 10
+elif K in range (-20,-10):
+    K = 15
+elif K in range (-10,-5):
+    K = 20
+elif K in range (-5,-3):
+    K = 25
+elif K in range (-5,0):
+    K = 35
+elif K in range (0,2):
+    K = 30
+elif K in range (2,4):
+    K = 40
+elif K in range (4,6):
+    K = 45
+elif K in range (6,10):
+    K = 50
+else: 
+    K = 60
 d = input("if win = 1, else = other number: ")
 d = int(d)
 EloRating(Ra, Rb, K, d) 
