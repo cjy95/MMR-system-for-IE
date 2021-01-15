@@ -6,6 +6,9 @@ import math
 # Function to calculate the Probability 
 def Probability(rating1, rating2): 
     ## 400 is universal number for elo rating system.
+    ##This session is to process where the user belong.
+
+    
     return 1.0 * 1.0 / (1 + 1.0 * math.pow(10, 1.0 * (rating1 - rating2) / 400)) 
   
   
@@ -78,7 +81,18 @@ else:
     K = 60
 d = input("if win = 1, else = other number: ")
 d = int(d)
+
+
+##This session is to process where the user belong.
+
+if Ra in range (1000,1100):
+    point = Ra - 1000
+    print("Player A is Bronze 4", point, Ra)
+
 EloRating(Ra, Rb, K, d) 
+
+
+
   
 # This code is contributed by 
 # Smitha Dinesh Semwal and modified by Joon Young Chang

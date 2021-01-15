@@ -58,7 +58,6 @@ elif K in range (2,4):
     K = 40
 elif K in range (4,6):
     K = 45
-    print("111111111111111111111111")
 elif K in range (6,10):
     K = 50
 else: 
@@ -71,3 +70,7 @@ else:
     then he won a game, he gained 18 points
     then he won again, he gained 15 points
     so he has 1018 MMR currently.
+
+
+
+    안녕하세요!
